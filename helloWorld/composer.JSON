@@ -2,5 +2,8 @@
     "name": "helloWorld",
     "version": "0.1",
     "type": "pagekit-extension",
-    "title": "RW hello world"
+    "title": "RW hello world",
+     "extra": {
+        "scripts": "scripts.php"
+    }
 }

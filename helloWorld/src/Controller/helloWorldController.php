@@ -13,15 +13,17 @@ class helloWorldController{
 		$config = $module->config;
 		$user = App::user();
 
-		if($user->inAnonymous()){
+		/*if($user->hasRole(1)){
 			return "User is Anonymous";
-		}
+		}else{
+			dump($user);
+		}*/
 
 		return [
+			dump($user),
 			'$view'  => [
 			'title' => '$view->title',
-			'name' => 'helloWorld:views/admin/index.php'
-		
+			'name' => 'helloWorld:views/admin/index.php'	
 			],
 			'message' => "is the message property built in or arbitrary?",
 			'itDoesntMatter' => "It doesn't matter i guess",
